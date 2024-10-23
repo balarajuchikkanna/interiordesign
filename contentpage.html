@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    
+    <!-- Navigation or Header component-->
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Interior Design</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section id="home">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="slide1.jpg" alt="Interior Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide2.jpg" alt="Room Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide3.jpg" alt="BedRoom Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide4.jpg" alt="BedRoom Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide5.jpg" alt="BedRoom Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide6.jpg" alt="BedRoom Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide7.jpg" alt="BedRoom Design">
+            </div>
+            <div class="slide fade">
+                <img src="slide8.jpg" alt="BedRoom Design">
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>We are a premium interior design company specializing in transforming homes and offices into elegant spaces. With years of experience, we provide customized solutions that bring your vision to life.</p>
+            <div class="about-icons">
+                <div class="icon-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Innovative Design</h3>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Creative Solutions</h3>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Customer Focused</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Services Section -->
+  <section id="services">
+    <div class="services-container">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <i class="fas fa-home"></i>
+        <h3>Residential Design</h3>
+        <p>We create beautiful living spaces tailored to your lifestyle and preferences.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-building"></i>
+        <h3>Commercial Design</h3>
+        <p>Functional and stylish interiors that enhance your business environment.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-couch"></i>
+        <h3>Furniture Customization</h3>
+        <p>Bespoke furniture to match your interior aesthetics and comfort needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery Section -->
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="project1.jpg" alt="Project 1" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="project2.jpg" alt="Project 2" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="project3.jpg" alt="Project 3" class="gallery-img">
+      </div>
+      <div class="gallery-item">
+        <img src="project4.jpg" alt="Project 4" class="gallery-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
